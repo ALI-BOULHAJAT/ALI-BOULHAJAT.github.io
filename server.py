@@ -3,34 +3,27 @@ app = Flask(__name__)
 
 @app.route('/')
 def my_home():
-    return 'hello'
+    return render_template('index.html')
 
-if __name__ == '__main__':
-    app.run()
+@app.route('/<string:path>')
+def page(path):
+    return render_template(path)
 
-# @app.route('/')
-# def my_home():
-#     return render_template('index.html')
+def write_to_file(data):
+    with open('database.txt', mode='a') as database:
+        email = data['email']
+        subject = data['subject']
+        message = data['message']
+        file = database.write(f'Email : {email}\n Subject : {subject}\n Message : {message}\n\n')
 
-# @app.route('/<string:path>')
-# def page(path):
-#     return render_template(path)
-
-# def write_to_file(data):
-#     with open('database.txt', mode='a') as database:
-#         email = data['email']
-#         subject = data['subject']
-#         message = data['message']
-#         file = database.write(f'Email : {email}\n Subject : {subject}\n Message : {message}\n\n')
-
-# @app.route('/submit_form', methods=['POST', 'GET'])
-# def submit_form():
-#     if request.method == 'POST':
-#         data = request.form.to_dict()
-#         write_to_file(data)
-#         return 'done'
-#     else:
-#         return 'Problem'
+@app.route('/submit_form', methods=['POST', 'GET'])
+def submit_form():
+    if request.method == 'POST':
+        data = request.form.to_dict()
+        write_to_file(data)
+        return 'done'
+    else:
+        return 'Problem'
 
 
 # @app.route('/about.html')
