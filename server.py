@@ -1,6 +1,6 @@
 from email.mime.application import MIMEApplication
 from posixpath import basename
-from flask import Flask, render_template, url_for, request
+from flask import Flask, render_template, url_for, request, redirect
 import email
 from importlib.resources import path
 import smtplib
@@ -63,6 +63,6 @@ def submit_form():
         data = request.form.to_dict()
         write_to_file(data)
         mail_sender()
-        return 'done'
+        return redirect('thank for contacting.html')
     else:
         return 'Problem'
