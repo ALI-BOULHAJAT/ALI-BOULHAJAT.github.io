@@ -9,6 +9,17 @@ p.s. I am available for Freelance hire (UI design, web development). mail: mille
 
 ------------------------------------------- */
 $(function() {
+  
+  var English = 0.6;
+  var French = 0.8;
+  var Arabic = 1;
+  var Berber = 1;
+  var C_prog = 0.8;
+  var Cpp_prog = 0.6;
+  var Dart_prog = 0.5;
+  var Python_prog = 0.4;
+  var Ladder_prog = 0.4;
+
 
   "use strict";
 
@@ -72,8 +83,9 @@ $(function() {
     }
   });
 
+  
   bar.animate(1);
-
+  
   // counters
   anime({
     targets: '.art-counter-frame',
@@ -82,7 +94,7 @@ $(function() {
     delay: 2300,
     easing: 'linear',
   });
-
+  
   anime({
     targets: '.art-counter',
     delay: 1300,
@@ -101,12 +113,38 @@ $(function() {
       });
     }
   });
-
+  
   // progressbars
+
+  //  --> English score
+
   var bar = new ProgressBar.Circle(circleprog1, {
     strokeWidth: 7,
     easing: 'easeInOut',
-    duration: 1400,
+    duration: 1500,
+    delay: 2000,
+    trailWidth: 7,
+    step: function(state, circle) {
+      var value = Math.round(circle.value() * 100);
+      if (value === 0) {
+        circle.setText('');
+      } else {
+        circle.setText(value);
+      }
+    }
+  });
+
+  bar.animate(English);
+  
+
+
+  //  --> French score
+
+
+  var bar = new ProgressBar.Circle(circleprog2, {
+    strokeWidth: 7,
+    easing: 'easeInOut',
+    duration: 1500,
     delay: 2500,
     trailWidth: 7,
     step: function(state, circle) {
@@ -119,31 +157,13 @@ $(function() {
     }
   });
 
-  bar.animate(1);
-
-  var bar = new ProgressBar.Circle(circleprog2, {
-    strokeWidth: 7,
-    easing: 'easeInOut',
-    duration: 1400,
-    delay: 2600,
-    trailWidth: 7,
-    step: function(state, circle) {
-      var value = Math.round(circle.value() * 100);
-      if (value === 0) {
-        circle.setText('');
-      } else {
-        circle.setText(value);
-      }
-    }
-  });
-
-  bar.animate(0.9);
+  bar.animate(French);
 
   var bar = new ProgressBar.Circle(circleprog3, {
     strokeWidth: 7,
     easing: 'easeInOut',
-    duration: 1400,
-    delay: 2700,
+    duration: 1500,
+    delay: 3500,
     trailWidth: 7,
     step: function(state, circle) {
       var value = Math.round(circle.value() * 100);
@@ -155,13 +175,31 @@ $(function() {
     }
   });
 
-  bar.animate(0.7);
+  bar.animate(Arabic);
+
+  var bar = new ProgressBar.Circle(circleprog4, {
+    strokeWidth: 7,
+    easing: 'easeInOut',
+    duration: 1500,
+    delay: 4000,
+    trailWidth: 7,
+    step: function(state, circle) {
+      var value = Math.round(circle.value() * 100);
+      if (value === 0) {
+        circle.setText('');
+      } else {
+        circle.setText(value);
+      }
+    }
+  });
+
+  bar.animate(Berber);
 
   var bar = new ProgressBar.Line(lineprog1, {
     strokeWidth: 1.72,
     easing: 'easeInOut',
-    duration: 1400,
-    delay: 2800,
+    duration: 1500,
+    delay: 4500,
     trailWidth: 1.72,
     svgStyle: {
       width: '100%',
@@ -172,13 +210,13 @@ $(function() {
     }
   });
 
-  bar.animate(.9);
+  bar.animate(C_prog);
 
   var bar = new ProgressBar.Line(lineprog2, {
     strokeWidth: 1.72,
     easing: 'easeInOut',
-    duration: 1400,
-    delay: 2900,
+    duration: 1500,
+    delay: 5000,
     trailWidth: 1.72,
     svgStyle: {
       width: '100%',
@@ -189,13 +227,13 @@ $(function() {
     }
   });
 
-  bar.animate(.95);
+  bar.animate(Cpp_prog);
 
   var bar = new ProgressBar.Line(lineprog3, {
     strokeWidth: 1.72,
     easing: 'easeInOut',
-    duration: 1400,
-    delay: 3000,
+    duration: 1500,
+    delay: 5500,
     trailWidth: 1.72,
     svgStyle: {
       width: '100%',
@@ -206,13 +244,13 @@ $(function() {
     }
   });
 
-  bar.animate(.75);
+  bar.animate(Dart_prog);
 
   var bar = new ProgressBar.Line(lineprog4, {
     strokeWidth: 1.72,
     easing: 'easeInOut',
-    duration: 1400,
-    delay: 3100,
+    duration: 1500,
+    delay: 6000,
     trailWidth: 1.72,
     svgStyle: {
       width: '100%',
@@ -223,13 +261,13 @@ $(function() {
     }
   });
 
-  bar.animate(.65);
+  bar.animate(Python_prog);
 
   var bar = new ProgressBar.Line(lineprog5, {
     strokeWidth: 1.72,
     easing: 'easeInOut',
-    duration: 1400,
-    delay: 3200,
+    duration: 1500,
+    delay: 6500,
     trailWidth: 1.72,
     svgStyle: {
       width: '100%',
@@ -240,7 +278,7 @@ $(function() {
     }
   });
 
-  bar.animate(.85);
+  bar.animate(Ladder_prog);
 
   // Contact form
   $('.art-input').keyup(function() {
