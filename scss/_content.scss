@@ -1065,11 +1065,11 @@ content (after 920px)
           font-size: 46px;
         }
 
-        & .art-buttons-frame {
-          text-align: center;
-          display: flex;
-          flex-wrap: wrap;
-          flex-direction: column;
+        // & .art-buttons-frame {
+        //   text-align: center;
+        //   display: flex;
+        //   flex-wrap: wrap;
+        //   flex-direction: column;
 
           & a {
             max-width: 200px;
@@ -1079,7 +1079,7 @@ content (after 920px)
               margin-bottom: 15px;
             }
           }
-        }
+        // }
       }
     }
   }

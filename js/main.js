@@ -1,13 +1,3 @@
-/* -------------------------------------------
-
-Name: 		Arter
-Version:  1.0
-Author:		Nazar Miller (millerDigitalDesign)
-Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
-
-p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
-
-------------------------------------------- */
 $(function() {
   
   var English = 0.6;
@@ -78,11 +68,11 @@ $(function() {
   });
 
   var bar = new ProgressBar.Line(preloader, {
-    strokeWidth: 1.7,
+    strokeWidth: 2.7,
     easing: 'easeInOut',
     duration: 1400,
     delay: 750,
-    trailWidth: 1.7,
+    trailWidth: 2.7,
     svgStyle: {
       width: '100%',
       height: '100%'

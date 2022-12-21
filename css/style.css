@@ -1,12 +1,5 @@
 /* -------------------------------------------
 
-Name: 		Arter
-Version:  1.0
-Author:		Nazar Miller (millerDigitalDesign)
-Portfolio:  https://themeforest.net/user/millerdigitaldesign/portfolio?ref=MillerDigitalDesign
-
-p.s. I am available for Freelance hire (UI design, web development). mail: miller.themes@gmail.com
-
 ------------------------------------------- */
 /*--------------------------------------------
 
@@ -157,9 +150,9 @@ h6 {
 }
 
 /* ----- buttons frame ----- */
-.art-buttons-frame a {
+/* .art-buttons-frame a {
   margin-right: 15px;
-}
+} */
 
 /* ----- suptitle ----- */
 .art-el-suptitle {
@@ -1033,7 +1026,7 @@ info bar
 }
 .art-info-bar .art-header .art-avatar .art-lamp-light .art-available-lamp:after {
   position: relative;
-  content: 'I am available for freelance hire';
+  content: 'Ali Boulhajat';
   width: 115px;
   display: block;
   padding: 5px 10px;
@@ -2580,7 +2573,7 @@ content (after 920px)
     color: #fafafc;
     font-size: 46px;
   }
-  .art-banner .art-banner-overlay .art-banner-title .art-buttons-frame {
+  .art-banner .art-banner-overlay .art-banner-title{
     text-align: center;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2592,11 +2585,11 @@ content (after 920px)
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .art-banner .art-banner-overlay .art-banner-title .art-buttons-frame a {
+  .art-banner .art-banner-overlay .art-banner-title{
     max-width: 200px;
     margin: 0 auto;
   }
-  .art-banner .art-banner-overlay .art-banner-title .art-buttons-frame a:first-child {
+  .art-banner .art-banner-overlay .art-banner-title a:first-child {
     margin-bottom: 15px;
   }
 
