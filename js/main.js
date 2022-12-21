@@ -36,6 +36,8 @@ $(function() {
   window.addEventListener("focus", () => {titlef = "hello";})
   
   document.title = titlef;
+
+  
   const swup = new Swup(options);
 
   // scrollbar
