@@ -30,10 +30,10 @@ $(function() {
   };
 
   
-  var titlef = "ff";
+  var titlef = document.title;
   
-  window.addEventListener("blur", () => {titlef = "Come Back :(";})
-  window.addEventListener("focus", () => {titlef = "hello";})
+  window.addEventListener("blur", () => {document.title = "Come Back  :(";})
+  window.addEventListener("focus", () => {document.title = "Ali Boulhajat";})
   
   document.title = titlef;
 
