@@ -19,7 +19,7 @@
   <link rel="stylesheet" href="css/plugins/fancybox.min.css">
   <!-- main css -->
   <link rel="stylesheet" href="css/style.css">
-  
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
 
   <title>Ali Boulhajat</title>
@@ -74,7 +74,7 @@
               <!-- name -->
               <h5 class="art-name mb-10"><a href="/index.html">Ali Boulhajat</a></h5>
               <!-- post -->
-              <div class="art-sm-text">Software Engineering Student<br>1337 Morocco</div>
+              <div class="art-sm-text">Étudiant en Génie Logiciel<br>1337 Maroc</div>
             </div>
             <!-- info bar header end -->
 
@@ -87,11 +87,11 @@
                 <ul>
                   <!-- country -->
                   <li>
-                    <h6>Residence:</h6><span>MOROCCO</span>
+                    <h6>Résidence:</h6><span>MAROC</span>
                   </li>
                   <!-- city -->
                   <li>
-                    <h6>City:</h6><span>AGADIR</span>
+                    <h6>Ville:</h6><span>AGADIR</span>
                   </li>
                   <!-- age -->
                   <li>
@@ -111,7 +111,7 @@
                 <div class="art-lang-skills-item">
                   <div id="circleprog1" class="art-cirkle-progress"></div>
                   <!-- title -->
-                  <h6>English</h6>
+                  <h6>Anglais</h6>
                 </div>
                 <!-- skill end -->
 
@@ -119,7 +119,7 @@
                 <div class="art-lang-skills-item">
                   <div id="circleprog2" class="art-cirkle-progress"></div>
                   <!-- title -->
-                  <h6>French</h6>
+                  <h6>Français</h6>
                 </div>
                 <!-- skill end -->
 
@@ -127,14 +127,14 @@
                 <div class="art-lang-skills-item">
                   <div id="circleprog3" class="art-cirkle-progress"></div>
                   <!-- title -->
-                  <h6>Arabic</h6>
+                  <h6>Arabe</h6>
                 </div>
                 <!-- skill end -->
                 <!-- skill -->
                 <div class="art-lang-skills-item">
                   <div id="circleprog4" class="art-cirkle-progress"></div>
                   <!-- title -->
-                  <h6>Berber</h6>
+                  <h6>Berbère</h6>
                 </div>
                 <!-- skill end -->
               </div>
@@ -150,7 +150,7 @@
                 <div class="art-hard-skills-item">
                   <div class="art-skill-heading">
                     <!-- title -->
-                    <h6>C Programming</h6>
+                    <h6>Programmation en C</h6>
                   </div>
                   <!-- progressbar frame -->
                   <div class="art-line-progress">
@@ -230,7 +230,7 @@
               <!-- knowledge list -->
               <ul class="art-knowledge-list p-15-0">
                 <!-- list item -->
-                <li>GIT knowledge</li>
+                <li>Connaissance on GIT</li>
                 <!-- list item -->
                 <li>Adobe (Photoshop, Illustrator)</li>
                 <!-- list item -->
@@ -245,7 +245,7 @@
               <div class="art-links-frame p-15-15">
 
                 <!-- download cv button -->
-                <a href="files/cv.pdf" class="art-link" download>Download cv <i class="fas fa-download"></i></a>
+                <a href="files/cv.pdf" class="art-link" download>Télécharger cv <i class="fas fa-download"></i></a>
 
               </div>
               <!-- links frame end -->
@@ -286,6 +286,7 @@
           </div>
           <!-- top background end -->
 
+
           <!-- swup container -->
           <div class="transition-fade" id="swup">
 
@@ -296,46 +297,92 @@
               <div class="container-fluid">
 
                 <!-- row -->
-                <div class="row p-60-0 p-lg-30-0 p-md-15-0">
+                <div class="row p-30-0">
                   <!-- col -->
                   <div class="col-lg-12">
 
-                    <!-- banner -->
-                    <div class="art-a art-banner" style="background-image: url(img/85.jpg)">
-                      <!-- banner back -->
-                      <div class="art-banner-back"></div>
-                      <!-- banner dec -->
-                      <div class="art-banner-dec"></div>
-                      <!-- banner overlay -->
-                      <div class="art-banner-overlay">
-                        <!-- main title -->
-                        <div class="art-banner-title">
-                          <!-- title -->
-                          <h1 class="mb-15">Discover More About Me!</h1>
-                          <!-- suptitle -->
-                          <div class="art-lg-text art-code mb-25">&lt;<i>code</i>&gt; I <span class="txt-rotate" data-period="5000"
-                              data-rotate='[ "Am a Software Engineering Student.", "Am a mumber of 42 Network.", "Proficiency Programming with C, C++, Dart and python" ]'></span>&lt;/<i>code</i>&gt;</div>
-                          <!-- <div class="art-buttons-frame">
-                             button
-                            <a href="/portfolio-3-col-masonry.html" class="art-btn art-btn-md"><span>Explore now</span></a>
-                          </div> -->
-                        </div>
-                        <!-- main title end -->
+                    <!-- section title -->
+                    <div class="art-section-title">
+                      <!-- title frame -->
+                      <div class="art-title-frame">
+                        <!-- title -->
+                        <h4>Contact Moi</h4>
                       </div>
-                      <!-- banner overlay end -->
+                      <!-- title frame end -->
                     </div>
-                    <!-- banner end -->
+                    <!-- section title end -->
+
+                    <!-- contact form frame -->
+                    <div class="art-a art-card">
+
+                      <!-- contact form -->
+                      <form id="form" class="art-contact-form" onsubmit="sendEmail(); reset(); return false">
+                        <!-- form field -->
+                        <div class="art-form-field">
+                          <!-- name input -->
+                          <input id="name" name="name" class="art-input" type="text" placeholder="Nom" required>
+                          <!-- label -->
+                          <label for="name"><i class="fas fa-user"></i></label>
+                        </div>
+                        <!-- form field end -->
+                        <!-- form field -->
+                        <div class="art-form-field">
+                          <!-- email input -->
+                          <input id="email" name="email" class="art-input" type="email" placeholder="Email" required>
+                          <!-- label -->
+                          <label for="email"><i class="fas fa-at"></i></label>
+                        </div>
+                        <!-- form field end -->
+                        <!-- form field -->
+                        <div class="art-form-field">
+                          <!-- email input -->
+                          <input id="subject" name="subject" class="art-input" type="text" placeholder="Sujet" required>
+                          <!-- label -->
+                          <label for="subject"><i class="fas fa-pencil"></i></label>
+                        </div>
+                        <!-- form field end -->
+                        <!-- form field -->
+                        <div class="art-form-field">
+                          <!-- message textarea -->
+                          <textarea id="message" name="text" class="art-input" placeholder="Message" required></textarea>
+                          <!-- label -->
+                          <label for="message"><i class="far fa-envelope"></i></label>
+                        </div>
+                        <!-- form field end -->
+                        <!-- button -->
+                        <div class="art-submit-frame">
+                          <button class="art-btn art-btn-md art-submit" type="submit"><span>Envoyer le Message</span></button>
+                          <!-- success -->
+                          <div class="art-success" >Success <i class="fas fa-check"></i></div>
+                        </div>
+                      </form>
+                      <!-- contact form end -->
+
+                      <script src="https://smtpjs.com/v3/smtp.js"></script>
+                      <script>
+                        function sendEmail(){
+                          Email.send({
+                              SecureToken : "f2add9f5-1cd7-4b75-967c-8b80e4d87a28",
+                              To : "ali.boulhajat@gmail.com",
+                              From : "boulhajat.ali@gmail.com",
+                              Subject : document.getElementById("subject").value,
+                              Body : "From : " + document.getElementById("name").value + "<br> Email : " + document.getElementById("email").value + "<br> message : " + document.getElementById("message").value
+                          }).then(
+                            message => alert("the email has been sent successfully \n Thank you for contacting me")
+                          );
+                        }
+                      </script>
+                    </div>
+                    <!-- contact form frame end -->
 
                   </div>
                   <!-- col end -->
+
                 </div>
                 <!-- row end -->
 
               </div>
               <!-- container end -->
-
-              <!-- removed place 01-->
-
             </div>
             <!-- scroll frame end -->
 
@@ -374,37 +421,23 @@
                 <!-- menu list -->
                 <ul class="main-menu">
                   <!-- menu item -->
-                  <li class="menu-item current-menu-item"><a href="/index.html">Home</a></li>
+                  <li class="menu-item"><a href="/index_fr.html">L'accueil</a></li>
                   <!-- menu item -->
-                  <li class="menu-item"><a href="/history.html">History</a></li>
+                  <li class="menu-item"><a href="/history_fr.html">Formation & Experience</a></li>
                   <!-- menu item -->
-                  <li class="menu-item"><a href="/contact.html">Contact</a></li>
+                  <li class="menu-item current-menu-item"><a href="/contact_fr.html">Contacter</a></li>
                 </ul>
                 <!-- menu list end -->
               </nav>
               <!-- menu end -->
+
               <!-- language change -->
               <ul class="art-language-change">
                 <!-- language item -->
-                <li class="art-active-lang"><a href="./index_fr.html">FR</a></li>
+                <li><a href="">FR</a></li>
                 <!-- language item -->
-                <li><a href="">EN</a></li>
+                <li class="art-active-lang"><a href="./contact.html">EN</a></li>
               </ul>
-
-              <script>
-                function darkMode() {
-                  var element = document.body;
-                  var content = document.getElementById("DarkModetext");
-                  element.className = "dark-mode";
-                  content.innerText = "Dark Mode is ON";
-                }
-                function lightMode() {
-                  var element = document.body;
-                  var content = document.getElementById("DarkModetext");
-                  element.className = "light-mode";
-                  content.innerText = "Dark Mode is OFF";
-                }
-              </script>
               <!-- language change end -->
 
             </div>
