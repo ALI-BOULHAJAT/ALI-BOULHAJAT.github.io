@@ -316,7 +316,7 @@
                     <div class="art-a art-card">
 
                       <!-- contact form -->
-                      <form id="form" class="art-contact-form">
+                      <form id="form" class="art-contact-form" onsubmit="sendEmail(); reset(); return false">
                         <!-- form field -->
                         <div class="art-form-field">
                           <!-- name input -->
@@ -335,6 +335,14 @@
                         <!-- form field end -->
                         <!-- form field -->
                         <div class="art-form-field">
+                          <!-- email input -->
+                          <input id="subject" name="subject" class="art-input" type="text" placeholder="Subject" required>
+                          <!-- label -->
+                          <label for="subject"><i class="fas fa-pencil"></i></label>
+                        </div>
+                        <!-- form field end -->
+                        <!-- form field -->
+                        <div class="art-form-field">
                           <!-- message textarea -->
                           <textarea id="message" name="text" class="art-input" placeholder="Message" required></textarea>
                           <!-- label -->
@@ -345,11 +353,25 @@
                         <div class="art-submit-frame">
                           <button class="art-btn art-btn-md art-submit" type="submit"><span>Send message</span></button>
                           <!-- success -->
-                          <div class="art-success">Success <i class="fas fa-check"></i></div>
+                          <div class="art-success" >Success <i class="fas fa-check"></i></div>
                         </div>
                       </form>
                       <!-- contact form end -->
 
+                      <script src="https://smtpjs.com/v3/smtp.js"></script>
+                      <script>
+                        function sendEmail(){
+                          Email.send({
+                              SecureToken : "f2add9f5-1cd7-4b75-967c-8b80e4d87a28",
+                              To : "ali.boulhajat@gmail.com",
+                              From : "boulhajat.ali@gmail.com",
+                              Subject : document.getElementById("subject").value,
+                              Body : "From : " + document.getElementById("name").value + "<br> Email : " + document.getElementById("email").value + "<br> message : " + document.getElementById("message").value
+                          }).then(
+                            message => alert("the email has been sent successfully \n Thank you for contacting me")
+                          );
+                        }
+                      </script>
                     </div>
                     <!-- contact form frame end -->
 
